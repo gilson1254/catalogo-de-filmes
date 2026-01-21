@@ -19,6 +19,11 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 app.use(express.json());
 app.use(express.static('public'));
 
+// Rota raiz para servir o index.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Database file
 const DB_FILE = path.join(__dirname, 'database.json');
 
