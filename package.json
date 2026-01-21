@@ -1,0 +1,19 @@
+{
+  "name": "nossos-filmes-series",
+  "version": "3.0.0",
+  "description": "Sistema de gerenciamento de filmes e séries para casais - Salas privadas com recomendações inteligentes",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": ["movies", "tv-shows", "tmdb", "couples", "private-rooms"],
+  "author": "Gilson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  }
+}

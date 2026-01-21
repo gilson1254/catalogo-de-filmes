@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1768957757700,
+      "username": "d",
+      "password": "123gilson2",
+      "created_at": "2026-01-21T01:09:17.700Z"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1768957768398,
+      "name": "d",
+      "code": "9BONE9RW",
+      "created_by": 1768957757700,
+      "created_at": "2026-01-21T01:09:28.399Z"
+    }
+  ],
+  "room_members": [
+    {
+      "room_id": 1768957768398,
+      "user_id": 1768957757700,
+      "joined_at": "2026-01-21T01:09:28.399Z"
+    }
+  ],
+  "lists": [],
+  "notes": [],
+  "ratings": [],
+  "sessions": []
+}
