@@ -17,11 +17,16 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 // Middleware
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Rota raiz para servir o index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    const indexPath = path.join(__dirname, 'public', 'index.html');
+    if (fs.existsSync(indexPath)) {
+        res.sendFile(indexPath);
+    } else {
+        res.status(404).send('Arquivo index.html não encontrado na pasta public');
+    }
 });
 
 // Database file
